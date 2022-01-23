@@ -1,9 +1,20 @@
+:root {
+    --pm-bg: #ff4c68;
+    --s-bg: #ef8172;
+    --w-bg: #fff;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+
 #title {
     background-color: #ff4c68;
     color: #fff;
+    padding-bottom: 3rem;
+    text-align: center;
+
 
     .container-fluid {
         padding: 3% 15%;
@@ -46,18 +57,22 @@ body {
 
             .title-img {
                 width: 60%;
-                transform: rotate(25deg);
+                right: 30%;
             }
         }
     }
 }
 
+
 #features {
+    position: relative;
+    z-index: 1;
     padding: 7% 15%;
+    background-color: white;
     
     .feature-box {
         text-align: center;
-        padding: 0 5%;
+        padding: 4% 5%;
 
         .icon {
             color: #ef8172;
@@ -80,6 +95,97 @@ body {
     }
 }
 
-#testimonials, #press, #pricing, #cta, #footer {
-    display: none;
+
+#testimonials {
+    text-align: center;
+    background-color: var(--pm-bg);
+    color: var(--w-bg);
+
+    .carousel-item {
+        padding: 7% 15%;
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 3rem;
+            line-height: 1.5;
+        }
+    
+        .testimonial-image {
+            border-radius: 100%;
+            width: 10%;
+            height: auto;
+            margin: 2rem;
+        }
+    }
+
 }
+
+#press {
+    background-color: var(--pm-bg);
+    text-align: center;
+    padding-bottom: 3%;
+
+    .press-logo {
+        width: 15%;
+        margin: 2rem 2rem 4rem;
+    }
+}
+
+#pricing {
+    padding: 5%;
+    text-align: center;
+    
+    .pricing-column {
+        padding: 3% 2%;
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+
+    p {
+        color: gray;
+    }
+}
+
+#cta {
+    padding: 7% 15%;
+    background-color: var(--pm-bg);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+    .cta-container {
+
+        h3 {
+            font-weight: 900;
+            font-size: 3rem;
+        }
+    
+        .download-btn {
+            margin: 2rem 1rem;
+        }
+    }
+}
+
+#footer {
+    text-align: center;
+    padding: 7% 15%;
+}
+
+
+@media (min-width: 1028px) {
+
+    #title {
+        text-align: left;
+    }
+
+    .title-img {
+        position: absolute;
+        z-index: 0;
+        transform: rotate(25deg);
+    }
+}
+
