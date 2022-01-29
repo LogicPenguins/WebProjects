@@ -104,10 +104,6 @@ body {
     padding: 5%;
     text-align: center;
 
-    .pricing-column {
-        padding: 3% 2%;
-    }
-
     h1 {
         color: white;
     }
@@ -117,15 +113,18 @@ body {
     }
 
     .pricing-cards {
-        h2 {
-            font-weight: 800;
+
+        .pricing-column {
+            padding: 3% 2%;
+
+            h2 {
+                font-weight: 800;
+            }
+        
+            p {
+                color: var(--pm-p-color);
+            }
         }
-    
-        p {
-            color: var(--pm-p-color);
-        }
-    
-    }
 
 }
 
@@ -155,6 +154,4 @@ body {
             }
         }
     }
-
-
 }
