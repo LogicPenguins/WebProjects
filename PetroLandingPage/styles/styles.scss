@@ -24,18 +24,20 @@ body {
         }
 
         .start-btn {
+            border: 2px solid white;
+            padding: 10px !important;
             border-radius: 30px;
             padding: 10px 0;
         }
 
-        .start-btn:active {
-            color: var(--btn-hover-text);
+        .start-btn:hover {
             background-color: white;
         }
 
         .nav-btn {
             color: white;
             transition: 0.7s;
+            margin: 0 8px;
         }
 
         .nav-btn:hover {
@@ -43,7 +45,6 @@ body {
         }
 
         .page-top {
-            text-align: center;
             margin-top: 4rem;
 
             .info-box {
@@ -64,24 +65,31 @@ body {
     }
 }
 
-@media (min-width: 990px) {
+@media (max-width: 1000px) {
 
-/*Reverse enigneer this */
-    .start-btn {
-        border: 2px solid white;
-        padding: 10px !important;
+    #title {
+        .container-fluid {
+            .start-btn {
+                padding: 0;
+                border: 0;
+                margin: 0;
+            }
+
+            .start-btn:hover {
+                background-color: transparent !important;
+            }
+
+            .nav-btn {
+                color: white;
+                transition: 0.7s;
+            }
+        
+            .page-top {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
     }
 
-    .start-btn:hover {
-        background-color: white;
-    }
 
-    .page-top {
-        text-align: left;
-    }
-
-    .slogan-start-btn {
-        text-align: left;
-    }
-    
 }

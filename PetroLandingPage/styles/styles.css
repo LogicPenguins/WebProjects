@@ -27,12 +27,13 @@ body {
 }
 
 #title .container-fluid .start-btn {
+  border: 2px solid white;
+  padding: 10px !important;
   border-radius: 30px;
   padding: 10px 0;
 }
 
-#title .container-fluid .start-btn:active {
-  color: var(--btn-hover-text);
+#title .container-fluid .start-btn:hover {
   background-color: white;
 }
 
@@ -40,6 +41,7 @@ body {
   color: white;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  margin: 0 8px;
 }
 
 #title .container-fluid .nav-btn:hover {
@@ -47,7 +49,6 @@ body {
 }
 
 #title .container-fluid .page-top {
-  text-align: center;
   margin-top: 4rem;
 }
 
@@ -66,20 +67,23 @@ body {
   width: 70%;
 }
 
-@media (min-width: 990px) {
-  /*Reverse enigneer this */
-  .start-btn {
-    border: 2px solid white;
-    padding: 10px !important;
+@media (max-width: 1000px) {
+  #title .container-fluid .start-btn {
+    padding: 0;
+    border: 0;
+    margin: 0;
   }
-  .start-btn:hover {
-    background-color: white;
+  #title .container-fluid .start-btn:hover {
+    background-color: transparent !important;
   }
-  .page-top {
-    text-align: left;
+  #title .container-fluid .nav-btn {
+    color: white;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
   }
-  .slogan-start-btn {
-    text-align: left;
+  #title .container-fluid .page-top {
+    text-align: center;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
