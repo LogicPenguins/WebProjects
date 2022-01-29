@@ -2,6 +2,7 @@
 
 :root {
     --pm-bg: #141128;
+    --pm-p-color: #60568a;
     --btn-hover-text: rgb(73, 73, 255);
 }
 
@@ -51,6 +52,7 @@ body {
                 padding: 2% 7% 5%;
 
                 .important-info {
+                    line-height: 1.5;
                     padding: 0% 4%;
                     color: white;
                     font-weight: 900;
@@ -64,6 +66,69 @@ body {
         }
     }
 }
+
+#features {
+    background-color: white;
+
+    .page-features {
+        padding: 3% 7%;
+        text-align: center;
+
+        .feature-box {
+            padding: 4% 5%;
+            display: block;
+            text-align: center;
+            
+            .icon {
+                color: var(--pm-bg);
+                transition: 0.7s;
+            }
+
+            .icon:hover {
+                color: var(--pm-p-color);
+            }
+
+            h3 {
+                margin-top: 10px;
+            }
+            
+            p {
+                color: var(--pm-p-color);
+            }
+        }
+    }
+}
+
+#pricing {
+    background-color: var(--pm-bg);
+    padding: 5%;
+    text-align: center;
+
+    .pricing-column {
+        padding: 3% 2%;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+
+    .pricing-cards {
+        h2 {
+            font-weight: 800;
+        }
+    
+        p {
+            color: var(--pm-p-color);
+        }
+    
+    }
+
+}
+
 
 @media (max-width: 1000px) {
 
