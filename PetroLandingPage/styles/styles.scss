@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;800;900&display=swap');
+
+:root {
+    --pm-bg: #141128;
+    --btn-hover-text: rgb(73, 73, 255);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+#title {
+    background-color: var(--pm-bg);
+
+    .container-fluid {
+        padding: 0.5% 7% 7%;
+
+        .navbar-brand {
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+
+        .start-btn {
+            border-radius: 30px;
+            padding: 10px 0;
+        }
+
+        .start-btn:active {
+            color: var(--btn-hover-text);
+            background-color: white;
+        }
+
+        .nav-btn {
+            color: white;
+            transition: 0.7s;
+        }
+
+        .nav-btn:hover {
+            color: var(--btn-hover-text);
+        }
+
+        .page-top {
+            text-align: center;
+            margin-top: 4rem;
+
+            .info-box {
+                padding: 2% 7% 5%;
+
+                .important-info {
+                    padding: 0% 4%;
+                    color: white;
+                    font-weight: 900;
+                    font-size: 3rem;
+                }
+            }
+
+            .title-image {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (min-width: 990px) {
+
+/*Reverse enigneer this */
+    .start-btn {
+        border: 2px solid white;
+        padding: 10px !important;
+    }
+
+    .start-btn:hover {
+        background-color: white;
+    }
+
+    .page-top {
+        text-align: left;
+    }
+
+    .slogan-start-btn {
+        text-align: left;
+    }
+    
+}

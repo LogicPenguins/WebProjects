@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;800;900&display=swap");
+:root {
+  --pm-bg: #141128;
+  --btn-hover-text: rgb(73, 73, 255);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+}
+
+#title {
+  background-color: var(--pm-bg);
+}
+
+#title .container-fluid {
+  padding: 0.5% 7% 7%;
+}
+
+#title .container-fluid .navbar-brand {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+#title .container-fluid .start-btn {
+  border-radius: 30px;
+  padding: 10px 0;
+}
+
+#title .container-fluid .start-btn:active {
+  color: var(--btn-hover-text);
+  background-color: white;
+}
+
+#title .container-fluid .nav-btn {
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#title .container-fluid .nav-btn:hover {
+  color: var(--btn-hover-text);
+}
+
+#title .container-fluid .page-top {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#title .container-fluid .page-top .info-box {
+  padding: 2% 7% 5%;
+}
+
+#title .container-fluid .page-top .info-box .important-info {
+  padding: 0% 4%;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+#title .container-fluid .page-top .title-image {
+  width: 70%;
+}
+
+@media (min-width: 990px) {
+  /*Reverse enigneer this */
+  .start-btn {
+    border: 2px solid white;
+    padding: 10px !important;
+  }
+  .start-btn:hover {
+    background-color: white;
+  }
+  .page-top {
+    text-align: left;
+  }
+  .slogan-start-btn {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
